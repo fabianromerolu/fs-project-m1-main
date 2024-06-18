@@ -1,30 +1,146 @@
 body {
-    margin: 1%;
-    background-image: url('../public/fondo.png'); /* Ruta relativa a la carpeta public */
-    background-size: cover; /* Ajusta el tamaño de la imagen al tamaño del cuerpo */
-    background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
-    background-attachment: fixed; /* Fija la imagen de fondo para que no se desplace con el contenido */
-  }
-  
-.container {
-    display: flex; /* Utilizamos flexbox para alinear los elementos en línea */
-    align-items: center; /* Alinea los elementos verticalmente en el centro */
-    justify-content: space-between; /* Distribuye los elementos a lo largo del contenedor */
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    border: 5px solid #000000;
-    border-radius: 10px;
-    background: radial-gradient(circle farthest-corner at center, #091B52, #0E50CE, #FFFFFF);
-    flex-direction: row; /* Cambia a dirección horizontal */
-  }
-  
-    /* Estilos opcionales para los botones y el SearchBar */
-    button{
-      margin: 5px; /* Agrega un pequeño margen entre los elementos */
-    }
-    
-    .SearchBar {
-      order: 1; /* Cambia el orden para que la SearchBar esté a la izquierda */
-    }
+margin: 1%;
+background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGtqbMD1I2yDATp8wRwbIdiVyPJ41BJYrDCg&s'); /* Ruta relativa a la carpeta public */
+background-size: cover; /* Ajusta el tamaño de la imagen al tamaño del cuerpo */
+background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+background-attachment: fixed; /* Fija la imagen de fondo para que no se desplace con el contenido */
+}
+section{
+text-align: center;
+}
+/* FORMULARIO DE ACTIVIDADES */
+.form-container {
+display: flex; /* Utiliza el modelo de caja flexible */
+gap: 1%; /* Espacio entre las tarjetas, el 1% del tamaño del contenedor */
+justify-content: center; /* Centra los elementos a lo largo del eje principal (horizontalmente) */
+background-color: #333;
+padding: 5px;
+margin-bottom: 1%;
+border-radius: 5px; /* Bordes redondeados */
+}
+.form-container input,
+.form-container textarea {
+border-radius: 5px; /* Bordes redondeados */
+margin: 10px 0;
+padding: 10px;
+text-align: center;
+justify-content: center;
+max-width: 30%;
+border-radius: 5%;
+border: 5px solid #dddddd;
+display: block;
+width: 40%;
+}
+
+/* Estilos para el contenedor de las tecnologías */
+.technologies-container {
+display: flex; /* Utiliza el modelo de caja flexible */
+flex-wrap: wrap; /* Permite que los elementos se envuelvan en múltiples líneas si no caben en una sola */
+gap: 1%; /* Espacio entre las tarjetas, el 1% del tamaño del contenedor */
+justify-content: center; /* Centra los elementos a lo largo del eje principal (horizontalmente) */
+}
+/* Estilos para cada tarjeta de tecnología */
+.technology-card {
+background-color: #333; /* Color de fondo oscuro */
+border-radius: 5%; /* Bordes redondeados */
+padding: 2%; /* Espaciado interno del contenido */
+max-width: 90%; /* Ancho de la tarjeta, el 10% del tamaño del contenedor */
+text-align: center; /* Alineación del texto al centro */
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera para la tarjeta */
+}
+/* Estilos para la imagen dentro de la tarjeta de tecnologia*/
+.technology-card img {
+max-width: 100%; /* Imagen con ancho máximo del contenedor */
+height: 95px; /* Altura fija de la imagen */
+border-radius: 5%; /* Bordes redondeados para la imagen */
+border: 5px solid #dddddd; /* Borde blanco alrededor de la imagen */
+}
+/* Estilos para el texto dentro de la tarjeta */
+.technology-card p {
+color: #fff; /* Color del texto blanco */
+margin-top: 1px; /* Espacio superior de 1px */
+}
+
+
+
+/* Estilos para el contenedor de las actividades */
+.activities-container {
+display: flex; /* Utiliza el modelo de caja flexible */
+flex-wrap: wrap; /* Permite que los elementos se envuelvan en múltiples líneas si no caben en una sola */
+gap: 1%; /* Espacio entre las tarjetas, el 1% del tamaño del contenedor */
+justify-content: center; /* Centra los elementos a lo largo del eje principal (horizontalmente) */
+}
+
+/* Estilos para cada tarjeta de actividades */
+.activity-card {
+background-color: #333; /* Color de fondo oscuro */
+border-radius: 5%; /* Bordes redondeados */
+padding: 1%; /* Espaciado interno del contenido */
+width: 22.2%; /* Ancho de la tarjeta, el 10% del tamaño del contenedor */
+height: 340px;
+text-align: center; /* Alineación del texto al centro */
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera para la tarjeta */
+margin-bottom: 1%;
+}
+
+/* Estilos para la imagen dentro de la tarjeta de actividades*/
+.activity-card img {
+max-width: 90%; /* Imagen con ancho máximo del contenedor */
+height: 60%;
+border-radius: 5%; /* Bordes redondeados para la imagen */
+border: 5px solid #dddddd; /* Borde blanco alrededor de la imagen */
+}
+
+.activity-Title{
+color: #fff; /* Color del texto blanco */
+margin: 0;
+}
+
+.activity-Description {
+padding: 1%; /* Ajusta este valor según lo que necesites */
+height: 25%;
+flex-wrap: wrap; /* Permite que los elementos se envuelvan en múltiples líneas si no caben en una sola */
+justify-content: center; /* Centra los elementos a lo largo del eje principal (horizontalmente) */
+background-color: #dddddd; /* Color de fondo oscuro */
+border-radius: 5%; /* Bordes redondeados para la imagen */
+white-space: normal; /* Permite el salto de línea dentro del cuadro emergente */
+overflow-wrap: break-word; /* Permite romper palabras largas si es necesario */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

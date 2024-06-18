@@ -4,17 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles/styles.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/reset.css"/>
     <title>Mi Pagina</title>
 </head>
 <body>
+    <section>
     <h1>Fabian Romero</h1>
-    <div class="container">
-        <div>
-        <NavLink><button>About me</button></NavLink>
-        <NavLink><button>vocational training</button></NavLink>
-        <NavLink><button>contact</button></NavLink>
+    </section>
+    <section>
+        <h3>Who am I?</h3>
+        <p>Fabian Romero, 20 years old, was born in Montería, Córdoba. He has completed various courses with
+        a digital focus, covering office tools, marketing, and gender violence. Additionally, 
+        he completed a technical degree in systems and is currently studying Law. He is 
+        developing an article on how technology can positively impact a social environment, which has 
+        also motivated him to study programming at Henry Academy.</p>
+    </section>
+
+    <section>
+        <h3 >My Favorite Technologies</h3>
+        <div class="technologies-container">
+            <div class="technology-card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React Native">
+                <p>React Native</p>
+            </div>
+            <div class="technology-card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg" alt="JavaScript">
+                <p>JavaScript</p>
+            </div>
         </div>
-    </div> 
+    </section>
+    <section>
+        <h3>My Favorite Activities</h3>
+        <div class="form-container">
+            <input type="text" id="title" placeholder="Título">
+            <textarea id="description" placeholder="Descripción"></textarea>
+            <input type="text" id="imageUrl" placeholder="URL de la Imagen">
+            <button onclick="addActivity()">+</button>
+        </div>
+
+        <div class="activities-container" id="activitiesContainer">
+            <!-- Las tarjetas de actividades se mostrarán aquí -->
+        </div>
+    </section>
     <script  src="scripts/index.js"></script>
 </body>
 </html>
