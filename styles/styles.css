@@ -25,11 +25,20 @@ margin: 10px 0;
 padding: 10px;
 text-align: center;
 justify-content: center;
-max-width: 30%;
 border-radius: 5%;
 border: 5px solid #dddddd;
 display: block;
 width: 40%;
+}
+.form-container button{
+    border-radius: 5px; /* Bordes redondeados */
+    margin: 10px 0;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+    border-radius: 5%;
+    border: 5px solid #dddddd;
+    display: block;
 }
 
 /* Estilos para el contenedor de las tecnologías */
@@ -44,14 +53,15 @@ justify-content: center; /* Centra los elementos a lo largo del eje principal (h
 background-color: #333; /* Color de fondo oscuro */
 border-radius: 5%; /* Bordes redondeados */
 padding: 2%; /* Espaciado interno del contenido */
-max-width: 90%; /* Ancho de la tarjeta, el 10% del tamaño del contenedor */
+width: 100px; /* Ancho de la tarjeta, el 10% del tamaño del contenedor */
+height: 120px;
 text-align: center; /* Alineación del texto al centro */
 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera para la tarjeta */
 }
 /* Estilos para la imagen dentro de la tarjeta de tecnologia*/
 .technology-card img {
-max-width: 100%; /* Imagen con ancho máximo del contenedor */
-height: 95px; /* Altura fija de la imagen */
+width: 90%; /* Imagen con ancho máximo del contenedor */
+height: 90%; /* Altura fija de la imagen */
 border-radius: 5%; /* Bordes redondeados para la imagen */
 border: 5px solid #dddddd; /* Borde blanco alrededor de la imagen */
 }
@@ -76,29 +86,31 @@ justify-content: center; /* Centra los elementos a lo largo del eje principal (h
 background-color: #333; /* Color de fondo oscuro */
 border-radius: 5%; /* Bordes redondeados */
 padding: 1%; /* Espaciado interno del contenido */
-width: 22.2%; /* Ancho de la tarjeta, el 10% del tamaño del contenedor */
-height: 340px;
+width: 250px; /* Ancho de la tarjeta, el 10% del tamaño del contenedor */
+height: 300px;
 text-align: center; /* Alineación del texto al centro */
 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera para la tarjeta */
-margin-bottom: 1%;
 }
 
 /* Estilos para la imagen dentro de la tarjeta de actividades*/
 .activity-card img {
-max-width: 90%; /* Imagen con ancho máximo del contenedor */
+width: 230px; /* Imagen con ancho máximo del contenedor */
 height: 60%;
 border-radius: 5%; /* Bordes redondeados para la imagen */
 border: 5px solid #dddddd; /* Borde blanco alrededor de la imagen */
+margin: 0;
 }
 
 .activity-Title{
 color: #fff; /* Color del texto blanco */
 margin: 0;
+padding-bottom: 0%;
 }
 
 .activity-Description {
-padding: 1%; /* Ajusta este valor según lo que necesites */
-height: 25%;
+margin: 0;
+padding: 2px;
+height: 26%;
 flex-wrap: wrap; /* Permite que los elementos se envuelvan en múltiples líneas si no caben en una sola */
 justify-content: center; /* Centra los elementos a lo largo del eje principal (horizontalmente) */
 background-color: #dddddd; /* Color de fondo oscuro */
