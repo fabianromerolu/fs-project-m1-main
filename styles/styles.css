@@ -1,141 +1,82 @@
-body {
-margin: 1%;
-background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGtqbMD1I2yDATp8wRwbIdiVyPJ41BJYrDCg&s'); /* Ruta relativa a la carpeta public */
-background-size: cover; /* Ajusta el tamaño de la imagen al tamaño del cuerpo */
-background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
-background-attachment: fixed; /* Fija la imagen de fondo para que no se desplace con el contenido */
-}
-section{
-text-align: center;
-}
-/* FORMULARIO DE ACTIVIDADES */
-.form-container {
+.section-container{
 display: flex; /* Utiliza el modelo de caja flexible */
+flex-wrap: wrap; /* Permite que los elementos se envuelvan en múltiples líneas si no caben en una sola */
 gap: 1%; /* Espacio entre las tarjetas, el 1% del tamaño del contenedor */
 justify-content: center; /* Centra los elementos a lo largo del eje principal (horizontalmente) */
-background-color: #333;
-padding: 5px;
-margin-bottom: 1%;
-border-radius: 5px; /* Bordes redondeados */
 }
-.form-container input,
-.form-container textarea {
-border-radius: 5px; /* Bordes redondeados */
-margin: 10px 0;
-padding: 10px;
+.section-container h1, h3{
+color: #fff;
+margin-top: 1px; /* Espacio superior de 1px */
+width: 100%;
 text-align: center;
-justify-content: center;
+}
+.card-info{
+width: 100%; /* Ancho de la tarjeta, el 10% del tamaño del contenedor (DIFERENCIA)*/
+background-color: #333; /* Color de fondo oscuro */
+padding: auto; /* Espaciado interno del contenido */
+text-align: center; /* Alineación del texto al centro */
+box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Sombra más fuerte para la tarjeta */
+}
+.card-technology{
+width: 15%; /* Ancho de la tarjeta, el 10% del tamaño del contenedor  (DIFERENCIA)*/
+background-color: #333; /* Color de fondo oscuro */
+padding: auto; /* Espaciado interno del contenido */
+text-align: center; /* Alineación del texto al centro */
+box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Sombra más fuerte para la tarjeta */
+}
+.card-technology img {
+width: 70%; /* Imagen con ancho máximo del contenedor */
+}
+.card-form-activities {
+width: 100%; /* Ancho de la tarjeta, el 10% del tamaño del contenedor */
+background-color: #333; /* Color de fondo oscuro */
+padding: auto; /* Espaciado interno del contenido */
+text-align: center; /* Alineación del texto al centro */
+box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Sombra más fuerte para la tarjeta */
+display: flex; /* Utiliza el modelo de caja flexible (DIFERENCIA) */
+gap: 1%; /* Espacio entre las tarjetas, el 1% del tamaño del contenedor (DIFERENCIA)*/
+justify-content: center; /* Centra los elementos a lo largo del eje principal (horizontalmente) (DIFERENCIA)*/
+}
+.card-form-activities input,
+.card-form-activities textarea {
+text-align: center;
 border-radius: 5%;
 border: 5px solid #dddddd;
 display: block;
-width: 40%;
+width: 100%;
 }
-.form-container button{
-    border-radius: 5px; /* Bordes redondeados */
-    margin: 10px 0;
-    padding: 10px;
-    text-align: center;
-    justify-content: center;
-    border-radius: 5%;
-    border: 5px solid #dddddd;
-    display: block;
+.card-form-activitiesr button{
+display: block;
 }
-
-/* Estilos para el contenedor de las tecnologías */
-.technologies-container {
-display: flex; /* Utiliza el modelo de caja flexible */
-flex-wrap: wrap; /* Permite que los elementos se envuelvan en múltiples líneas si no caben en una sola */
-gap: 1%; /* Espacio entre las tarjetas, el 1% del tamaño del contenedor */
-justify-content: center; /* Centra los elementos a lo largo del eje principal (horizontalmente) */
-}
-/* Estilos para cada tarjeta de tecnología */
-.technology-card {
+.card-activities{
+width: 280px; /* Ancho de la tarjeta, el 10% del tamaño del contenedor  (DIFERENCIA)*/
 background-color: #333; /* Color de fondo oscuro */
-border-radius: 5%; /* Bordes redondeados */
-padding: 2%; /* Espaciado interno del contenido */
-width: 100px; /* Ancho de la tarjeta, el 10% del tamaño del contenedor */
-height: 120px;
 text-align: center; /* Alineación del texto al centro */
-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera para la tarjeta */
-}
-/* Estilos para la imagen dentro de la tarjeta de tecnologia*/
-.technology-card img {
-width: 90%; /* Imagen con ancho máximo del contenedor */
-height: 90%; /* Altura fija de la imagen */
-border-radius: 5%; /* Bordes redondeados para la imagen */
+box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Sombra más fuerte para la tarjeta */
+height: 320px;
 border: 5px solid #dddddd; /* Borde blanco alrededor de la imagen */
 }
-/* Estilos para el texto dentro de la tarjeta */
-.technology-card p {
-color: #fff; /* Color del texto blanco */
-margin-top: 1px; /* Espacio superior de 1px */
+.card-activities img{
+width: 280px; /* Imagen con ancho máximo del contenedor */
+height: 160px;
 }
-
-
-
-/* Estilos para el contenedor de las actividades */
-.activities-container {
-display: flex; /* Utiliza el modelo de caja flexible */
-flex-wrap: wrap; /* Permite que los elementos se envuelvan en múltiples líneas si no caben en una sola */
-gap: 1%; /* Espacio entre las tarjetas, el 1% del tamaño del contenedor */
-justify-content: center; /* Centra los elementos a lo largo del eje principal (horizontalmente) */
-}
-
-/* Estilos para cada tarjeta de actividades */
-.activity-card {
-background-color: #333; /* Color de fondo oscuro */
-border-radius: 5%; /* Bordes redondeados */
-padding: 1%; /* Espaciado interno del contenido */
-width: 250px; /* Ancho de la tarjeta, el 10% del tamaño del contenedor */
-height: 300px;
-text-align: center; /* Alineación del texto al centro */
-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera para la tarjeta */
-}
-
-/* Estilos para la imagen dentro de la tarjeta de actividades*/
-.activity-card img {
-width: 230px; /* Imagen con ancho máximo del contenedor */
-height: 60%;
-border-radius: 5%; /* Bordes redondeados para la imagen */
-border: 5px solid #dddddd; /* Borde blanco alrededor de la imagen */
-margin: 0;
-}
-
 .activity-Title{
-color: #fff; /* Color del texto blanco */
-margin: 0;
-padding-bottom: 0%;
-}
-
-.activity-Description {
-margin: 0;
-padding: 2px;
-height: 26%;
+width: 100%; /* Imagen con ancho máximo del contenedor */
+height: 40px;
 flex-wrap: wrap; /* Permite que los elementos se envuelvan en múltiples líneas si no caben en una sola */
-justify-content: center; /* Centra los elementos a lo largo del eje principal (horizontalmente) */
 background-color: #dddddd; /* Color de fondo oscuro */
-border-radius: 5%; /* Bordes redondeados para la imagen */
 white-space: normal; /* Permite el salto de línea dentro del cuadro emergente */
 overflow-wrap: break-word; /* Permite romper palabras largas si es necesario */
+color: #000000; /* Color del texto blanco */
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.activity-Description {
+width: 100%; /* Imagen con ancho máximo del contenedor */
+height: 120px;
+flex-wrap: wrap; /* Permite que los elementos se envuelvan en múltiples líneas si no caben en una sola */
+white-space: normal; /* Permite el salto de línea dentro del cuadro emergente */
+overflow-wrap: break-word; /* Permite romper palabras largas si es necesario */
+color: #ffffff; /* Color del texto blanco */
+}
 
 
 
