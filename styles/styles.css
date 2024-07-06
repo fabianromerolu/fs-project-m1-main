@@ -5,7 +5,7 @@ gap: 1%; /* Espacio entre las tarjetas, el 1% del tamaño del contenedor */
 justify-content: center; /* Centra los elementos a lo largo del eje principal (horizontalmente) */
 }
 .section-container h1, h3{
-color: #fff;
+color: #000000;
 margin-top: 1px; /* Espacio superior de 1px */
 width: 100%;
 text-align: center;
