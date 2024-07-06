@@ -6,7 +6,6 @@ justify-content: center; /* Centra los elementos a lo largo del eje principal (h
 }
 .section-container h1, h3{
 color: #000000;
-margin-top: 1px; /* Espacio superior de 1px */
 width: 100%;
 text-align: center;
 }
@@ -20,7 +19,7 @@ box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Sombra más fuerte para la tarjet
 .card-technology{
 width: 15%; /* Ancho de la tarjeta, el 10% del tamaño del contenedor  (DIFERENCIA)*/
 background-color: #333; /* Color de fondo oscuro */
-padding: auto; /* Espaciado interno del contenido */
+padding: 0.4%; /* Espaciado interno del contenido */
 text-align: center; /* Alineación del texto al centro */
 box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Sombra más fuerte para la tarjeta */
 }
